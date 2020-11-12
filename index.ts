@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { version } from './package.json'
 import { watch } from 'chokidar'
 import { Observable } from 'rxjs'
