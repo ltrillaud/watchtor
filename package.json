@@ -17,6 +17,10 @@
     "build": "tsc",
     "release": "standard-version -a && git push --follow-tags origin master"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltrillaud/watchtor.git"
+  },
   "author": "Laurent Trillaud",
   "license": "MIT",
   "dependencies": {
