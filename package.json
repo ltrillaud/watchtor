@@ -1,6 +1,6 @@
 {
   "name": "watchtor",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Watch a file extension into a directory to move it into another one",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
