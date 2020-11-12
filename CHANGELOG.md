@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/ltrillaud/watchtor/compare/v1.2.2...v1.2.3) (2020-11-12)
+
+
+### Bug Fixes
+
+* **app:** add she bang ([0b2db7e](https://github.com/ltrillaud/watchtor/commit/0b2db7ea3ed1dcd93d8a01c8429bd9528cb28c4c))
+
 ### [1.2.2](https://github.com/ltrillaud/watchtor/compare/v1.2.1...v1.2.2) (2020-11-12)
 
 
