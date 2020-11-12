@@ -1,0 +1,31 @@
+{
+  "name": "watchtor",
+  "version": "1.0.0",
+  "description": "Watch a torrent directory",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "files": [
+    "/dist"
+  ],
+  "bin": {
+    "watchtor": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "release": "standard-version -a && git push --follow-tags origin master"
+  },
+  "author": "Laurent Trillaud",
+  "license": "MIT",
+  "dependencies": {
+    "caporal": "^1.4.0",
+    "chokidar": "^3.4.3",
+    "mv": "^2.1.1",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@types/mv": "^2.1.0",
+    "@types/node": "^14.14.7",
+    "typescript": "^4.0.5"
+  }
+}
