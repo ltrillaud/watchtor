@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "private": false,
   "files": [
-    "/dist"
+    "/dist",
+    "watchtor.service",
+    "README.md"
   ],
   "bin": {
     "watchtor": "./dist/index.js"
