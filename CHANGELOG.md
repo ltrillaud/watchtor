@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.11](https://github.com/ltrillaud/watchtor/compare/v1.2.10...v1.2.11) (2020-11-13)
+
+
+### Bug Fixes
+
+* **app:** usePolling for network folder ([e2ab0f8](https://github.com/ltrillaud/watchtor/commit/e2ab0f8eb7f1996bc9099a7eba462047a1953cad))
+
 ### [1.2.10](https://github.com/ltrillaud/watchtor/compare/v1.2.9...v1.2.10) (2020-11-13)
 
 
