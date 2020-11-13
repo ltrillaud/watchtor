@@ -2,12 +2,12 @@
   "name": "watchtor",
   "version": "1.2.7",
   "description": "Watch a file extension into a directory to move it into another one",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "private": false,
   "prepublish": "tsc",
   "bin": {
-    "watchtor": "./dist/index.js"
+    "watchtor": "index.js"
   },
   "scripts": {
     "build": "tsc",
