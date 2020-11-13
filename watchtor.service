@@ -2,28 +2,12 @@
 Description=Watch a file extension into a directory to move it into another one
 
 [Service]
-# set the working directory to have consistent relative paths
-WorkingDirectory=/var/www/app
-
 # start the server file (file is relative to WorkingDirectory here)
-ExecStart=watchtor <mySrcPath> <myDstPath> <myExtention>
+ExecStart=/usr/bin/watchtor <mySrcPath> <myDstPath> <myExtention>
 
 # if process crashes, always try to restart
-Restart=always
+Restart=on-failure
 
-# let 500ms between the crash and the restart
-RestartSec=500ms
-
-# send log tot syslog here (it doesn't compete with other log config in the app itself)
-StandardOutput=syslog
-StandardError=syslog
-
-# nodejs process name in syslog
-SyslogIdentifier=nodejs
-
-# user and group starting the app
-User=www-data
-Group=www-data
 
 [Install]
 # start node at multi user system level (= sysVinit runlevel 3) 

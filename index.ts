@@ -15,15 +15,18 @@ export const main = () => {
       .argument('<toDir>', 'Move to directory')
       .argument('<extension>', 'filter on this extension')
       .action((args) => {
-        console.log(`watching ${args.extension} files from ${args.fromDir} to ${args.toDir}`)
+        console.log(`watchtor v${version} watching ${args.extension} files from ${args.fromDir} to ${args.toDir}`)
 
         new Observable<string>(observer => {
           watch(args.fromDir, { ignoreInitial: true, depth: 1, })
             .on('add', path => observer.next(path))
-        }).pipe(filter(path => path.endsWith(args.extension)))
+        }).pipe(filter(path => {
+          console.log(`watchtor detect add file(${path})`)
+          return path.endsWith(args.extension)
+        }))
           .subscribe(from => {
             const to = join(args.toDir, basename(from))
-            const msg = `Move file from (${from}) to(${to})`
+            const msg = `watchtor move file from (${from}) to(${to})`
             mv(from, to, err => {
               if (err) {
                 console.log(`${msg} failed`, err.toString())
