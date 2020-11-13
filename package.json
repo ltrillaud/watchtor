@@ -6,11 +6,6 @@
   "types": "dist/index.d.ts",
   "private": false,
   "prepublish": "tsc",
-  "files": [
-    "/dist",
-    "watchtor.service",
-    "README.md"
-  ],
   "bin": {
     "watchtor": "./dist/index.js"
   },
