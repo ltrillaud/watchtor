@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.9](https://github.com/ltrillaud/watchtor/compare/v1.2.8...v1.2.9) (2020-11-13)
+
+
+### Bug Fixes
+
+* **app:** better log ([e1cfef3](https://github.com/ltrillaud/watchtor/commit/e1cfef38b1f0d2d75daaa46bfea25a97a339bbd7))
+
 ### [1.2.8](https://github.com/ltrillaud/watchtor/compare/v1.2.7...v1.2.8) (2020-11-13)
 
 
