@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.5](https://github.com/ltrillaud/watchtor/compare/v1.2.4...v1.2.5) (2020-11-13)
+
+
+### Bug Fixes
+
+* **app:** add export main ([6d654a7](https://github.com/ltrillaud/watchtor/commit/6d654a7ba7aedac02a552e03788431ac4e19a614))
+* **app:** force tsc on publish ([b8cbd8e](https://github.com/ltrillaud/watchtor/commit/b8cbd8ee14ecb1f8dd4c327d029d0a47f87906ce))
+
 ### [1.2.4](https://github.com/ltrillaud/watchtor/compare/v1.2.3...v1.2.4) (2020-11-13)
 
 ### [1.2.3](https://github.com/ltrillaud/watchtor/compare/v1.2.2...v1.2.3) (2020-11-12)
