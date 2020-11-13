@@ -18,7 +18,7 @@ export const main = () => {
         console.log(`watchtor v${version} watching ${args.extension} files from ${args.fromDir} to ${args.toDir}`)
 
         new Observable<string>(observer => {
-          watch(args.fromDir, { ignoreInitial: true, depth: 1, })
+          watch(args.fromDir, { ignoreInitial: true, depth: 1, usePolling: true })
             .on('add', path => {
               console.log(`watchtor detect add file(${path})`)
               observer.next(path)
