@@ -19,11 +19,11 @@ export const main = () => {
 
         new Observable<string>(observer => {
           watch(args.fromDir, { ignoreInitial: true, depth: 1, })
-            .on('add', path => observer.next(path))
-        }).pipe(filter(path => {
-          console.log(`watchtor detect add file(${path})`)
-          return path.endsWith(args.extension)
-        }))
+            .on('add', path => {
+              console.log(`watchtor detect add file(${path})`)
+              observer.next(path)
+            })
+        }).pipe(filter(path => path.endsWith(args.extension)))
           .subscribe(from => {
             const to = join(args.toDir, basename(from))
             const msg = `watchtor move file from (${from}) to(${to})`
