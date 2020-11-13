@@ -1,6 +1,6 @@
 dist
 node_modules
-src/**/*.js
-src/**/*.js.map
-src/**/*.d.ts
+**/*.js
+**/*.js.map
+**/*.d.ts
 npm-debug.log
