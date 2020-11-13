@@ -23,7 +23,7 @@ export const main = () => {
               console.log(`watchtor detect add file(${path})`)
               observer.next(path)
             })
-        }).pipe(filter(path => path.endsWith(args.extension)))
+        }).pipe(filter(path => path.endsWith(args.extension) && !path.startsWith('.')))
           .subscribe(from => {
             const to = join(args.toDir, basename(from))
             const msg = `watchtor move file from (${from}) to(${to})`
